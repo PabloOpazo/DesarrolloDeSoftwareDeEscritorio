@@ -1,0 +1,11 @@
+ORDEN DE DESARROLLO
+comienza por las entidades fuertes
+  -Crear clases
+  -Atributos
+
+-Constructores
+-Getters/setters
+-To String()
+-Reglas de negocio (set) > validar > if
+-Customer
+-Main > objetos y pruebas
