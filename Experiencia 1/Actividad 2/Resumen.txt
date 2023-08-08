@@ -1,0 +1,8 @@
+En esta actividad, trabajarás de manera teórica y práctica en el laboratorio, formando equipos conformados en parejas.
+Realizarán una actividad cuyo objetivo es identificar las entidades obtenidas del análisis de un problema planteado.
+Luego, definirán una clase, sus atributos y métodos para aplicar los conceptos fundamentales de la POO en un lenguaje de programación y en un entorno de desarrollo.
+Además, se implementará el código utilizando las sentencias más adecuadas para solucionar de mejor manera el problema planteado.
+La propuesta de solución al análisis del problema podrá presentarse utilizando IDE NetBeans.
+
+Al finalizar la actividad, los invitamos a participar en un resumen de la utilización de clases, atributos y métodos dentro del
+Lenguaje y Programación, incluyendo su sintaxis y semántica. También generaremos un debate de opiniones constructivas para obtener mejoras en la solución planteada. 

@@ -1,0 +1,10 @@
+¿QUÉ APRENDERÉ?
+
+
+En la experiencia de aprendizaje Interfaz Gráfica y conexión a Base de Datos, trabajarás en construir menús, ventanas y sus componentes donde se deberá
+almacenar información en una base de datos y que pueda ser tratada por el usuario permitiendo la interacción gráfica que finalmente otorgue dar una solución a un problema. 
+
+Se utilizarán metodologías activas para el aprendizaje, que contemplan fundamentalmente actividades prácticas que fomenten a través del trabajo en equipo,
+el análisis y reflexión, para solucionar problemas identificando los contenedores, componentes, las interfaces gráficas y las funcionalidades requeridas para
+un motor de base de datos, que darán la mejor solución.Trabajarás principalmente en casos reales aplicando lo aprendido y logrando un acercamiento con los
+futuros problemas que se le presenten en su vida profesional.
