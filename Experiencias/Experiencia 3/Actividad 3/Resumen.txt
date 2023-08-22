@@ -1,0 +1,9 @@
+Una base de datos es una colección organizada de datos que, adicionalmente, proporciona herramientas para almacenar, organizar, obtener y modificar
+información sin necesidad de preocuparse por su representación interna.
+
+En esta actividad, trabajarás en la construcción de una interfaz gráfica utilizando menús, contenedores y componentes para dar solución a problemas planteados.
+Deberás implementar el código asociado a los eventos necesarios para el funcionamiento de los componentes y contenedores a través de menús.
+Además, realizarás una conexión a un motor de base de datos para almacenar información en ella. Para lograrlo, se llevarán a cabo actividades prácticas que
+fomentarán el análisis y la reflexión en equipo, identificando las funcionalidades que brindarán la mejor solución.
+
+Al finalizar, todos visualizarán las soluciones planteadas para generar un debate de opiniones constructivas, permitiendo obtener mejoras en la solución propuesta.

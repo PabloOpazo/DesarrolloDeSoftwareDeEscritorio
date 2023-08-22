@@ -1,0 +1,9 @@
+La interfaz gráfica permite al usuario interactuar con una aplicación de manera intuitiva e utilizarla de forma eficiente y lograr una mayor productividad.
+Utiliza sistemas de ventanas y elementos como botones, cajas de texto, listas, entre otros. Además, un menú nos brinda las opciones que queramos realizar en nuestro sistema.
+
+En esta actividad, trabajarás construyendo una interfaz gráfica utilizando menús, contenedores y componentes para dar solución a problemas planteados.
+Deberás implementar el código asociado a los eventos necesarios para la funcionalidad de los componentes y contenedores a través de menús. Para lograrlo,
+se contemplarán actividades prácticas que fomentarán el trabajo en equipo, el análisis y la reflexión para solucionar problemas, identificando las funcionalidades
+que brindarán la mejor solución.
+
+Al finalizar, todos los alumnos visualizarán las soluciones propuestas y participarán en un debate de opiniones constructivas para obtener mejoras en las soluciones planteadas.

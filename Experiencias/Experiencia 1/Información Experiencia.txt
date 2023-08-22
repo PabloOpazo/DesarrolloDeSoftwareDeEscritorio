@@ -1,0 +1,9 @@
+¿QUÉ APRENDERÉ?
+
+
+En la experiencia de aprendizaje Lenguaje de Programación, sintaxis y semántica, aprenderemos a aplicar los conceptos fundamentales de la POO en un lenguaje de
+programación y en un entorno de desarrollo y con ello a dar soluciones a través de la sintaxis, semántica y sentencias del lenguaje JAVA.
+
+La metodología para la implementación de actividades considera el aprendizaje basado en problemas (ABP) la realización de actividades prácticas que fomenten a
+través del trabajo en equipo el análisis y reflexión para solucionar problemas identificando las entidades y las funcionalidades que darán la mejor solución.
+Trabajarás con casos reales aplicando lo aprendido, generando un acercamiento con los futuros problemas que se le presenten en tu vida profesional.
