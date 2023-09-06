@@ -1,9 +1,0 @@
-¿QUÉ APRENDERÉ?
-
-
-En esta segunda la experiencia de aprendizaje Herencia y Almacenamiento temporal a través de Colecciones, trabajaremos en implementar una estructura de herencia
-para dar solución a un problema, permitiendo reutilizar el código y guardar objetos de las clases, en una estructura de almacenamiento temporal.
-
-La metodología para la implementación de actividades considera el aprendizaje basado en problemas (ABP) la realización de actividades prácticas que fomenten a través
-del trabajo en equipo el análisis y reflexión para solucionar problemas identificando las entidades y las funcionalidades que darán la mejor solución.
-Trabajarás principalmente en casos reales aplicando lo aprendido y logrando un acercamiento con los futuros problemas que se le presenten en su vida profesional.
