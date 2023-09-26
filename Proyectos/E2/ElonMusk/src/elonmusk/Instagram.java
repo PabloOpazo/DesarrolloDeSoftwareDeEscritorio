@@ -38,6 +38,11 @@ public class Instagram extends RedSocial {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
+
+    @Override
+    public String toString() {
+        return "Instagram{" + "id=" + id + ", historia=" + historia + ", estado=" + estado + '}';
+    }
     
     
 }

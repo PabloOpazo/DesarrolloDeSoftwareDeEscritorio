@@ -40,6 +40,11 @@ public class Twitter extends RedSocial {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+    @Override
+    public String toString() {
+        return "Twitter{" + "id=" + id + ", noticia=" + noticia + ", fecha=" + fecha + '}';
+    }
     
     
 }
