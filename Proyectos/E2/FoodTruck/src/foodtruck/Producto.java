@@ -1,14 +1,14 @@
 package foodtruck;
 
 public abstract class Producto implements IDescontable{
-    private int codigo;
-    private String descripcion;
-    private int precio;
+    protected int codigo;
+    protected String descripcion;
+    protected double precio;
 
     public Producto() {
     }
 
-    public Producto(int codigo, String descripcion, int precio) {
+    public Producto(int codigo, String descripcion, double precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -30,11 +30,11 @@ public abstract class Producto implements IDescontable{
         this.descripcion = descripcion;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
     
