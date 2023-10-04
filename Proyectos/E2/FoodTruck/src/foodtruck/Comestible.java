@@ -18,30 +18,31 @@ public final class Comestible extends Producto {
     public void setPapas(boolean papas) {
         this.papas = papas;
     }
-
-    @Override
-    public double obtenerCompra() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public double descontar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public int calcularTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void imprimirBoleta() {
-        System.out.println("BOLETA");
-    }
-
+    
     @Override
     public String toString() {
         return "Comestible{" + "papas=" + papas + '}';
     }
+    
+    @Override
+    public int descontar(String formaPago, int unidades){
+        int compra = super.obtenerCompra(unidades);
+        int descto = (int) (compra * IDescontable.DESCUENTO_COMESTIBLE);
+        if (formaPago.equalsIgnoreCase("efectivo")) {
+            descto += (int) (compra* IDescontable.DESCUENTO_EFECTIVO);
+        }
+        return descto;
+    }
+
+    @Override
+    public String imprimirBoleta(String fpago, int unidades) {
+        int total = super.calcularTotal(fpago, unidades);
+        String msg = "COMESTIBLE: " + descripcion + " $" + total;
+        if (papas) {
+            msg += "\n #### INCLUYE PAPITAS ####";
+        }
+        return msg;
+    }
+    
     
 }

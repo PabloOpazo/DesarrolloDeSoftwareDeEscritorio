@@ -20,29 +20,26 @@ public class Bebestible extends Producto {
     }
 
     @Override
-    public double obtenerCompra() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public double descontar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public int calcularTotal() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void imprimirBoleta() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
     public String toString() {
         return "Bebestible{" + "gradosAlcohol=" + gradosAlcohol + '}';
     }
     
+    @Override
+    public int descontar(String formaPago, int unidades){
+        int compra = super.obtenerCompra(unidades);
+        int descto = (int) (compra * IDescontable.DESCUENTO_BEBESTIBLE);
+        if (formaPago.equalsIgnoreCase("efectivo")) {
+            descto += (int) (compra* IDescontable.DESCUENTO_EFECTIVO);
+        }
+        return descto;
+    }
+
+    @Override
+    public String imprimirBoleta(String fpago, int unidades) {
+        int total = super.calcularTotal(fpago, unidades);
+        String msg = "BEBESTIBLE: " + descripcion + " $" + total;
+        msg += ", " + gradosAlcohol + "% de alcohol";
+        return msg;
+    }
     
 }
