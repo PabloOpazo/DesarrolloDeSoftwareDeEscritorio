@@ -5,7 +5,8 @@ public interface IDescontable {
     double DESCUENTO_COMESTIBLE = 0.1;
     double DESCUENTO_BEBESTIBLE = 0.05;
     
-    obtenerCompra();
-    descontar();
+    double obtenerCompra();
+    double descontar();
+    int calcularTotal();
     
 }
