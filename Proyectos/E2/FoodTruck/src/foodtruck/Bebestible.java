@@ -8,7 +8,7 @@ public class Bebestible extends Producto {
 
     public Bebestible(double gradosAlcohol, int codigo, String descripcion, int precio) {
         super(codigo, descripcion, precio);
-        this.gradosAlcohol = gradosAlcohol;
+        this.setGradosAlcohol(gradosAlcohol);
     }
 
     public double getGradosAlcohol() {

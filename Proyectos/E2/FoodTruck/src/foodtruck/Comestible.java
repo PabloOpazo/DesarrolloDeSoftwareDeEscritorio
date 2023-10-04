@@ -8,7 +8,7 @@ public final class Comestible extends Producto {
 
     public Comestible(boolean papas, int codigo, String descripcion, int precio) {
         super(codigo, descripcion, precio);
-        this.papas = papas;
+        this.setPapas(papas);
     }
 
     public boolean isPapas() {

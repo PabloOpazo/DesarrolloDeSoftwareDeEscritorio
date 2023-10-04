@@ -9,9 +9,9 @@ public abstract class Producto implements IDescontable{
     }
 
     public Producto(int codigo, String descripcion, double precio) {
-        this.codigo = codigo;
-        this.descripcion = descripcion;
-        this.precio = precio;
+        this.setCodigo(codigo);
+        this.setDescripcion(descripcion);
+        this.setPrecio(precio);
     }
 
     public int getCodigo() {
