@@ -4,10 +4,8 @@
  */
 package Vistas;
 
-/**
- *
- * @author CETECOM
- */
+import Modelo.Employee;
+
 public class EmployeeCrear extends javax.swing.JFrame {
 
     /**
@@ -15,6 +13,9 @@ public class EmployeeCrear extends javax.swing.JFrame {
      */
     public EmployeeCrear() {
         initComponents();
+        setResizable(false);
+        setLocationRelativeTo(null);
+        //setUndecorated(true);
     }
 
     /**
@@ -26,21 +27,82 @@ public class EmployeeCrear extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bt_agregar = new javax.swing.JButton();
+        bt_salir = new javax.swing.JButton();
+        txt_nombre_completo = new javax.swing.JTextField();
+        lb_nombre_completo = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        bt_agregar.setText("Agregar");
+        bt_agregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_agregarActionPerformed(evt);
+            }
+        });
+
+        bt_salir.setText("Salir");
+        bt_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_salirActionPerformed(evt);
+            }
+        });
+
+        txt_nombre_completo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_nombre_completoActionPerformed(evt);
+            }
+        });
+
+        lb_nombre_completo.setText("Nombre completo:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bt_agregar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bt_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(lb_nombre_completo)
+                .addGap(18, 18, 18)
+                .addComponent(txt_nombre_completo, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_nombre_completo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lb_nombre_completo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt_agregar)
+                    .addComponent(bt_salir))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bt_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_agregarActionPerformed
+        Employee emp = new Employee();
+        emp.setNombre_completo(txt_nombre_completo.getText());
+        
+    }//GEN-LAST:event_bt_agregarActionPerformed
+
+    private void txt_nombre_completoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nombre_completoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_nombre_completoActionPerformed
+
+    private void bt_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_salirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_bt_salirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -53,7 +115,7 @@ public class EmployeeCrear extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -79,5 +141,9 @@ public class EmployeeCrear extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bt_agregar;
+    private javax.swing.JButton bt_salir;
+    private javax.swing.JLabel lb_nombre_completo;
+    private javax.swing.JTextField txt_nombre_completo;
     // End of variables declaration//GEN-END:variables
 }

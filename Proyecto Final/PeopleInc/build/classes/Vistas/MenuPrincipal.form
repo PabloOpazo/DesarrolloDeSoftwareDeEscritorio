@@ -9,6 +9,7 @@
             <Property name="text" type="java.lang.String" value="Crear"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mo_crearMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mo_crearActionPerformed"/>
           </Events>
         </Menu>

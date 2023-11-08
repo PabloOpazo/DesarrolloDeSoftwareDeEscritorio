@@ -15,6 +15,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
      */
     public MenuPrincipal() {
         initComponents();
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setTitle("People Inc.");
     }
 
     /**
@@ -43,6 +46,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
 
         mo_crear.setText("Crear");
+        mo_crear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                mo_crearMouseClicked(evt);
+            }
+        });
         mo_crear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mo_crearActionPerformed(evt);
@@ -86,8 +94,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_bt_salirActionPerformed
 
     private void mo_crearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mo_crearActionPerformed
-        new EmployeeCrear().setVisible(true); 
+        
     }//GEN-LAST:event_mo_crearActionPerformed
+
+    private void mo_crearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mo_crearMouseClicked
+        new EmployeeCrear().setVisible(true); 
+    }//GEN-LAST:event_mo_crearMouseClicked
 
     /**
      * @param args the command line arguments
